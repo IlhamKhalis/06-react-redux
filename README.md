@@ -58,3 +58,35 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ### Praktikum 3
 
 ![Screenshot](assets-report/03.png)
+
+### Pertanyaan Praktikum
+
+1. Apa kegunaan dari kode ini import { useEffect } from "react"; Pada file pages/_app.tsx? jelaskan
+
+Digunakan untuk mengimpor fungsi useEffect dari library React.
+
+2. Jika pada file pages/_app.tsx kita tidak menggunakan useEffect menghapus baris 3, dan baris 9-11, apa yang akan terjadi?
+
+Maka semua operasi yang seharusnya dilakukan setelah render pertama tidak akan dijalankan.
+
+3. Mengapa di react/nextjs penulisan tag html untuk class, harus diganti menjadi className ?
+
+Karena class adalah kata kunci yang dicadangkan dalam JavaScript, dan JSX lebih dekat ke JavaScript daripada HTML.
+
+4. Apakah store pada nextjs bisa menyimpan banyak redux reducer?
+
+Ya, store pada Next.js bisa menyimpan banyak reducer Redux.
+
+5. Jelaskan kegunaan dari file store.js!
+
+File store.js biasanya digunakan untuk mengatur store Redux.
+
+6. Pada file pages/login.tsx, apa maksud dari kode ini ?
+const { isLogin } = useSelector((state) => state.auth);
+
+Digunakan untuk mengambil nilai isLogin dari state Redux.
+
+7. Pada file pages/counter.tsx, apa maksud dari kode ini?
+const {totalCounter} = useSelector((state) => state.counter);
+
+Membaca data dari store Redux.
